@@ -26,3 +26,16 @@ CREATE TABLE usuario(
  data_pedido timestamp
  );
 
+ SELECT * FROM pedido;
+
+
+ INSERT INTO pedido (endereco,cliente) VALUES ('murilo', 'murilo.nascimento.silva26@escola.pr.gov.br');
+
+ CREATE TABLE item_pedido(
+  id_item_pedido SERIAL PRIMARY KEY,
+  id_pedido int not null,
+  id_suplemento int not null,
+  quantidade int not null,
+  preco_unitario decimal (10,2) not null
+  );
+
