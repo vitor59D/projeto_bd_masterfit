@@ -72,5 +72,15 @@ CREATE TABLE usuario(
     data_validade timestamp not null
     );
 
+CREATE TABLE diario_alimentar(
+  id_registro SERIAL PRIMARY KEY,
+  id_usuario int not null,
+  id_alimento int not null,
+  categoria_refeicao varchar(255) not null,
+  quantidad_gramas decimal(8,2) not null,
+  calorias_calculadas decimal(8,2) not null,
+  data_registro date not null,
+  data_sincronizacao timestamp
+);
 
 
