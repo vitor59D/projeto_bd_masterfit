@@ -29,7 +29,7 @@ CREATE TABLE usuario(
  SELECT * FROM pedido;
 
 
- INSERT INTO pedido (endereco,cliente) VALUES ('murilo', 'murilo.nascimento.silva26@escola.pr.gov.br');
+ INSERT INTO pedido (endereco,cliente) VALUES ('vitor', 'vitor.daniel.santos28@escola.pr.gov.br');
 
  CREATE TABLE item_pedido(
   id_item_pedido SERIAL PRIMARY KEY,
@@ -38,4 +38,5 @@ CREATE TABLE usuario(
   quantidade int not null,
   preco_unitario decimal (10,2) not null
   );
+
 
