@@ -94,3 +94,14 @@ CREATE TABLE suplemento(
   ativo boolean
 );
 
+ create table public.notificacao_push (
+  id_notificacao int not null,
+  id_usuario int not null,
+  titulo varchar(100) not null,
+  mensagem text not null,
+  tipo_notificacao varchar(100) not null,
+  data_agendamento timestamp not null,
+  enviada boolean null,
+  data_envio timestamp null,
+  constraint notificacao_push_pkey primary key (id_notificacao)
+);
