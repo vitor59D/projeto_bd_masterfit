@@ -39,4 +39,14 @@ CREATE TABLE usuario(
   preco_unitario decimal (10,2) not null
   );
 
+ SELECT * FROM item_pedido;
+
+  CREATE TABLE suplemento_favorito(
+
+  id_favorito SERIL PRIMARY KEY,
+  id_usuario int not null,
+  id_suplemento int not null,
+  data_adicao timestamp
+  );
+
 
