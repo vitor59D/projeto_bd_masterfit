@@ -83,4 +83,14 @@ CREATE TABLE diario_alimentar(
   data_sincronizacao timestamp
 );
 
+CREATE TABLE suplemento(
+  id_suplemento SERIAL PRIMARY KEY,
+  nome varchar(150),
+  descricao text,
+  peso_kg varchar(30),
+  preco_unitario decimal(10,2),
+  quantidade_estoque int,
+  url_imagem varchar(255),
+  ativo boolean
+);
 
